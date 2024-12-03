@@ -1,5 +1,5 @@
 FROM amazonlinux:latest
-RUN dnf install -y java-17.0.13-openjdk
+RUN dnf install -y java-17-openjdk
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip .

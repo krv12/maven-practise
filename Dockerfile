@@ -1,5 +1,5 @@
-FROM amazonlinux
-RUN yum install java -y
+FROM amazonlinux:latest
+RUN yum update -y && yum install java-1.8.0-openjdk -y
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip .
